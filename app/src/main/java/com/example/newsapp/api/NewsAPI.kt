@@ -13,7 +13,7 @@ interface NewsAPI {
 
         //These queries are gotten from the full get request string that starts with "q"
         @Query("country")
-        countryCode: String = "us",
+        countryCode: String = "ng",
 
         @Query("page")
         pageNumber: Int = 1,
