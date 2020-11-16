@@ -13,7 +13,7 @@ interface NewsAPI {
 
         //These queries are gotten from the full get request string that starts with "q"
         @Query("country")
-        countryCode: String = "ng",
+        countryCode: String = "us",
 
         @Query("page")
         pageNumber: Int = 1,
@@ -24,7 +24,7 @@ interface NewsAPI {
     //This function will return our news response
     ) : Response<NewsResponse>
 
-    @GET("v2/top-everything")
+    @GET("v2/everything")
     suspend fun searchForNews(
 
         //These queries are gotten from the full get request string that starts with "q"
