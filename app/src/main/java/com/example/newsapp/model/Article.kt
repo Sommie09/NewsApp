@@ -2,6 +2,7 @@ package com.example.newsapp.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.Serializable
 
 //A table in our database
 @Entity(
@@ -22,4 +23,4 @@ data class Article(
     val url: String,
     val urlToImage: String
 
-)
+) : Serializable
