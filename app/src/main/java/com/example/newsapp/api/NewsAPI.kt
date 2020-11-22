@@ -24,7 +24,8 @@ interface NewsAPI {
     //This function will return our news response
     ) : Response<NewsResponse>
 
-    @GET("v2/everything")
+    @GET("v2/" +
+            "everything")
     suspend fun searchForNews(
 
         //These queries are gotten from the full get request string that starts with "q"

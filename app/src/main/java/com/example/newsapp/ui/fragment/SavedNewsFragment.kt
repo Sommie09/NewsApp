@@ -74,6 +74,8 @@ class SavedNewsFragment: Fragment(R.layout.fragment_saved_news) {
 
     }
 
+
+
     private fun setupRecyclerView(){
         newsAdapter = NewsAdapter()
         rvSavedNews.apply {
