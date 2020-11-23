@@ -3,6 +3,7 @@ package com.example.newsapp.ui.fragment
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavArgs
 import androidx.navigation.fragment.navArgs
@@ -21,6 +22,8 @@ class ArticleFragment: Fragment(R.layout.fragment_article) {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel = (activity as NewsActivity).viewModel
+
+        (activity as AppCompatActivity?)!!.supportActionBar!!.title = "Article"
 
         val article = args.article
 
